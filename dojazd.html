@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/dojazd.css">
+    <link href='http://fonts.googleapis.com/css?family=Arima+Madurai&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            font-family: 'Arima Madurai', sans-serif;
+        }
+    </style>
+    <script src="js/dojazd.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgJOrXfDZcX0T9-2BI5_8Avv7pHluw07I&callback=initMap">
+    </script>
+    <script>
+        function initMap() {
+
+            var location = new google.maps.LatLng(50.061691, 19.939380);
+            var location2 = new google.maps.LatLng(50.060872, 19.93833);
+            var map = new google.maps.Map(document.getElementById("map"), {
+                center: location,
+                zoom: 17
+            });
+
+
+            var marker1 = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: `Ślub:
+Kościół Mariacki
+plac Mariacki 5, 31-042 Kraków`
+
+            });
+
+            var marker2 = new google.maps.Marker({
+                position: location2,
+                map: map,
+                title: `Wesele:
+Karczma Wierzynek
+Rynek Główny 16, 33-332 Kraków`
+
+            });
+
+        }
+
+    </script>
+
+</head>
+<body>
+<header class="site-header">
+    <div class="container toolbar">
+        <div class="logo">
+            <a href="main.html">
+                <div class="heart">♥</div>
+            </a>
+        </div>
+        <div class="header">
+            <h1 class="way-header">SPRAWDŹ JAK DO NAS DOJECHAĆ</h1>
+        </div>
+    </div>
+</header>
+
+<section class="map-section">
+    <div class="container map-box">
+        <div id="map">
+
+        </div>
+    </div>
+</section>
+</body>
+</html>

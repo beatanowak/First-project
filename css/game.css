@@ -1,0 +1,146 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/guestzone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.site-header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: lightgrey;
+    background-color: rgba(0, 0, 0, .3);
+    padding: 70px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.logo {
+    display: block;
+    margin-left: 0;
+    text-shadow: 0 0 0.5em whitesmoke;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.heart {
+    transform: translateZ(0);
+    color: red;
+    position: relative;
+    font-size: 200px;
+}
+
+.heart:hover {
+    animation: pulse .5s linear;
+}
+
+.heart:before {
+    content: "♥";
+    position: absolute;
+    color: darkred;
+    opacity: 0;
+}
+
+@keyframes pulse {
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.guest-header {
+    font-size: 50px;
+    text-shadow: 0 0 0.1em black;
+    color: cadetblue;
+}
+
+.header {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    padding-right: 400px;
+}
+
+.game-title {
+    font-size: 36px;
+    text-shadow: 0 0 0.1em black;
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+.memory {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-bottom: 100px;
+}
+
+.card {
+    flex-basis: 25%;
+    height: 200px;
+    width: 150px;
+    border: 4px solid black;
+}
+
+.misie {
+    background-image: url("../images/misie.jpg");
+    background-size: cover;
+}
+
+.niedz {
+    background-image: url("../images/bears.jpg");
+    background-size: cover;
+}
+
+.she {
+    background-image: url("../images/bride.jpg");
+    background-size: cover;
+}
+
+.he{
+    background-image: url("../images/groom.jpg");
+    background-size: cover;
+}
+
+.auto {
+    background-image: url("../images/car.jpg");
+    background-size: cover;
+}
+
+.obraczka {
+    background-image: url("../images/rings.png");
+    background-size: cover;
+}
+
+.lions {
+    background-image: url("../images/lwy.jpg");
+    background-size: cover;
+
+}
+
+.flaming {
+    background-image: url("../images/flamingos.jpg");
+    background-size: cover;
+    position: center;
+}
+
+.off {
+    background-image: url("../images/white.jpg");
+}
+
+.hidden {
+    background-image: url("../images/black.jpg");
+}

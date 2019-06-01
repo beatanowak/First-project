@@ -1,0 +1,412 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkgrey;
+}
+
+/*menu*/
+
+.navigation {
+    display: flex;
+}
+
+.site-header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: lightgrey;
+    padding: 70px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.logo {
+    display: block;
+    margin-left: 0;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.menu {
+    margin-right: 0;
+    width: 100%;
+}
+
+.menu_navigation {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.menu_navigation li{
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.menu_navigation a, .wed-day-event a, .logo, .guestZoneList a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 50px;
+    text-shadow: 0 0 0.2em darkred;
+}
+
+.wed-day{
+    position: relative;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    z-index: 200;
+}
+
+.wed-day-event {
+    background-color: lightgrey;
+    padding-top: 40px;
+    position: absolute;
+    width: 200px;
+    height: 220px;
+    left: 50px;
+    display: none;
+}
+
+.guest_zone {
+    position: relative;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    z-index: 300;
+    top: 100%;
+    margin: auto;
+
+}
+
+.guestZoneList {
+    background-color: lightgrey;
+    padding-top: 50px;
+    position: absolute;
+    width: 400px;
+    height: 320px;
+    display: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.menu_list a:hover {
+    color: deeppink;
+}
+
+/*przesuwane zdjecia*/
+
+.site-main {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    position: relative;
+}
+
+.section1 {
+    background-image: linear-gradient(180deg, white, lightgrey);
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.picture1 {
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/flamingos.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.picture2 {
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/bears.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 60%;
+}
+
+.picture3 {
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/misie.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+}
+
+.picture4 {
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/fingers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 20%;
+}
+
+.picture5 {
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/lwy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.arrow-left {
+    transform: scaleX(-1);
+    left: 10px;
+    top: 200px;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+}
+
+.arrow-right {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    right: 10px;
+    top: 200px;
+}
+
+.slide-img {
+    display: none;
+    opacity: 0;
+    transition: opacity 2s;
+
+}
+
+.slider .visible {
+    display: inline-block;
+    opacity: 1;
+}
+
+
+/*formularz: niewidoczne opcje*/
+
+.accommodation, .otherDiet, .ifPresent {
+    display: none;
+}
+
+/*error na czerwono*/
+
+.error-message2 {
+    color: red;
+}
+
+
+/*formularz2*/
+
+.form2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    background: lightgrey;
+    width: 70%;
+    border: 2px double darkgoldenrod;
+    font-size: 24px;
+}
+
+
+.content, .btn-box2 {
+    margin-top: 20px;
+}
+
+.btn-box2 {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+button.btn2 {
+    height: 50px;
+    width: 200px;
+}
+
+.survey {
+    display: flex;
+    justify-content: center;
+}
+
+.confirm-presence {
+    text-align: center;
+    color: darkgoldenrod;
+    text-shadow: 0 0 0.05em darkred;
+}
+
+input, select, button {
+    height: 26px;
+    font-size: 20px;
+}
+
+/*zegar*/
+
+.counter {
+    height: 300px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url('../images/hourglass.jpg');
+    background-position: -0px;
+    background-repeat: no-repeat;
+    border: 2px double indianred;
+    margin-bottom: 50px;
+}
+
+.clock-box {
+    font-size: 1.5em;
+    color: indianred;
+    width: 500px;
+    text-align: center;
+    position: absolute;
+    left:400px;
+}
+
+.tillWed {
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+/*kontakt*/
+
+.ikons {
+    padding-bottom: 50px;
+}
+
+.kontakt {
+    height: 300px;
+    width: 70%;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.bride, .groom, .tekst {
+   width: 33%;
+    height: 100%;
+}
+
+.bride, .groom {
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.bride {
+    background-image: url('../images/bride.jpg');
+}
+
+.groom {
+    background-image: url('../images/groom.jpg');
+}
+
+.icon:hover {
+    animation: loop 1s linear;
+}
+
+@keyframes loop {
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+
+
+.tekst {
+    font-size: 26px;
+    text-align: center;
+    padding-top: 100px;
+    text-shadow: 0 0 0.05em white;
+}
+
+.bride:hover, .groom:hover {
+    opacity: 0.3;
+}
+
+/*//heart animation*/
+
+.heart {
+    transform: translateZ(0);
+    color: red;
+    position: relative;
+    font-size: 200px;
+}
+
+.heart:hover {
+    animation: pulse .5s linear;
+}
+
+.heart:before {
+    content: "♥";
+    position: absolute;
+    color: darkred;
+    opacity: 0;
+}
+
+.heart.happy {
+    color: #A12b2b;
+}
+
+.heart.happy:before {
+    opacity: 0;
+    transform: translateX(0px) rotateZ(20deg);
+    animation: fly 0.5s ease;
+}
+
+@keyframes pulse {
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes fly {
+    0% {
+        opacity: 0.4;
+        transform: translateX(60px) rotateZ(15deg);
+    }
+
+    25% {
+        opacity: 0.6;
+        transform: translateX(70px) rotateZ(15deg);
+    }
+
+    50% {
+        opacity: 0.9;
+        transform: scale(1.5) translateX(80px) rotateZ(-15deg);
+    }
+
+    75% {
+        opacity: 0.6;
+        transform: translateX(90px) rotateZ(-15deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(2) translateX(100px) rotateZ(15deg);
+    }
+}
+
+
+

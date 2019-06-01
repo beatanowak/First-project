@@ -1,0 +1,93 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkgrey;
+}
+
+.login-page {
+    background-image: url("../images/background.jpg");
+    height: 981px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding-top: 100px;
+    /*padding-left: 300px;*/
+    color: white;
+}
+
+.log-info, .welcome-text-div, .login-row, .info-container {
+    background: white;
+    background: rgba(0, 0, 0, .5);
+    width: 1000px;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+}
+
+.welcome-text-div {
+    border-top: 1px solid white;
+}
+
+.welcome-text {
+    line-height: 180px;
+    font-size: 54px;
+}
+
+.welcome-text, .log-info-text {
+    text-align: center;
+}
+
+.log-info-text {
+    line-height: 100px;
+    font-size: 24px;
+}
+
+.her-name {
+    color: deeppink;
+}
+
+.his-name {
+    color: #00b3ff;
+}
+
+.log-in-text {
+    font-weight: bolder;
+}
+
+.password-control {
+    width: 200px;
+    height: 30px;
+}
+
+.password-box {
+    margin-right: 0;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+}
+
+.btn-box {
+    margin-left: 0;
+}
+
+
+.login-row {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.info-container {
+    text-align: center;
+    padding-bottom: 20px;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+}
+

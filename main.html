@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wesele Kasia i Tomek</title>
+    <link href='http://fonts.googleapis.com/css?family=Arima+Madurai&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        body {
+            font-family: 'Arima Madurai', sans-serif;
+        }
+    </style>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<!--<body onload="weddingTime();">-->
+
+<!--//menu nawigacyjne-->
+
+<header class="site-header">
+    <div class="container toolbar">
+        <div class="logo">
+            <a href="main.html">
+            <div class="heart">♥</div>
+            </a>
+        </div>
+        <nav class="menu">
+            <ul class="menu_navigation">
+                <li class="wed-day menu_list"><a href="main.html">UROCZYSTOŚCI</a>
+                    <ul class="wed-day-event">
+                        <li class="menu_element"><a href="slub.html">Ślub</a></li>
+                        <li class="menu_element"><a href="wesele.html">Wesele</a></li>
+                    </ul>
+                </li>
+                <li class="menu_list"><a href="gallery.html">GALERIA</a></li>
+                <li class="menu_list guest_zone"><a href="main.html">STREFA GOŚCIA</a>
+                <ul class="guestZoneList">
+                    <li class="menu_element"><a href="fun.html">Pośmiejmy się</a></li>
+                    <li class="menu_element"><a href="gift.html">Do gości</a></li>
+                    <li class="menu_element"><a href="game.html">Memory game</a></li>
+                </ul>
+                </li>
+                <li class="menu_list"><a href="dojazd.html">DOJAZD</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!--//slider ze zdjęciami-->
+
+<section class="site-main">
+    <div class="container wedding-pictures slider">
+        <a href="#"><img class="arrow-left" src="images/arrow.png" alt=""></a>
+
+        <div class="picture1 slide-img"></div>
+        <div class="picture2 slide-img"></div>
+        <div class="picture3 slide-img"></div>
+        <div class="picture4 slide-img"></div>
+        <div class="picture5 slide-img"></div>
+        <div class="main-text">
+            <div class="sitOn">
+            </div>
+        </div>
+        <a href="#"><img class="arrow arrow-right" src="images/arrow.png" alt=""></a>
+    </div>
+</section>
+
+<!--potwierdzenie przybycia-->
+
+<section class="survey">
+    <div class="container form2">
+        <div class="form-box">
+        <form class="surv" action="" method="post">
+            <h2 class="confirm-presence">Potwierdź swoją obecność!</h2>
+            <div class="content">
+                <div class="name">
+                    <label>Podaj swoje imię</label>
+                    <input type="text" name="name" class="firstName" placeholder="Twoje imię ">
+                </div>
+                <div class="surname">
+                    <label>Podaj swoje nazwisko</label>
+                    <input type="text" name="surname" class="secondName" placeholder="Twoje nazwisko ">
+                </div>
+                <div class="presence">
+                    <label>Potwierdzam swoją obecność</label>
+                    <select name="presence" class="myPresence">
+                        <option>-Wybierz-</option>
+                        <option>Tak</option>
+                        <option>Nie</option>
+                        <option>Będę tylko na ślubie</option>
+                    </select>
+                </div>
+                <div class="ifPresent">
+                <div class="diet">
+                    <label>Czy masz jakąś dietę?</label>
+                    <select name="diet" class="dietOption">
+                        <option>-Wybierz-</option>
+                        <option>Nie</option>
+                        <option>Wegańską</option>
+                        <option>Wegetariańską</option>
+                        <option>Inną</option>
+                    </select>
+                </div>
+                <div class="otherDiet">
+                    <label>Jaką?</label>
+                    <input type="textarea" name="otherDiet" class="otherDiets" placeholder="Inna dieta">
+                </div>
+                <div class="transport1">
+                    <label>Czy jesteś z Krakowa lub okolic?</label>
+                    <select name="trans1" class="trans1">
+                        <option>-Wybierz-</option>
+                        <option>Tak</option>
+                        <option>Nie</option>
+                    </select>
+                </div>
+                <div class="accommodation">
+                    <label>Czy Potrzebujesz noclegu?</label>
+                    <select name="accomm" class="accomm">
+                        <option>-Wybierz-</option>
+                        <option>Tak</option>
+                        <option>Nie</option>
+                    </select>
+                </div>
+                <div class="transport2">
+                    <label>Czy chcesz skorzystać z transportu ze ślubu na salę weselną?</label>
+                    <select name="trans2" class="trans2">
+                        <option>-Wybierz-</option>
+                        <option>Tak</option>
+                        <option>Nie</option>
+                    </select>
+                </div>
+                <div class="transport3">
+                    <label>Czy chcesz skorzystać z transportu z wesela do centrum Krakowa?</label>
+                    <select name="trans2" class="trans3">
+                        <option>-Wybierz-</option>
+                        <option>Nie</option>
+                        <option>Tak, o 2:00</option>
+                        <option>Tak, o 4:00</option>
+                    </select>
+                </div>
+                </div>
+                <div class="btn-box2">
+                    <button type="submit" class="btn2">
+                        Potwierdzam
+                    </button>
+                </div>
+                <div class="info-container2">
+                    <div class="error-message2">
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+</section>
+
+<!--//zegar odliczajacy-->
+
+<section class="counter">
+    <div class="container" >
+        <div class="clock-box">
+            <p class="tillWed">Do naszego ślubu pozostało: </p><div id="clock"></div>
+        </div>
+    </div>
+</section>
+
+<!--kontakt-->
+
+<section class="kontakt">
+    <div class="container">
+        <div class="bride"></div>
+        <div class="tekst">Skontaktuj się z nami klikając w odpowiednią ikonkę</div>
+        <div class="groom"></div>
+    </div>
+</section>
+
+<!--ikony-->
+
+<section class="ikons">
+    <div class="container">
+        <div class="hericons">
+            <a href="#"><img class="icon" src="images/gmail.png" alt=""></a>
+            <a href="#"><img class="icon" src="images/fb.png" alt=""></a>
+        </div>
+        <div class="hisicons">
+            <a href="#"><img class="icon" src="images/gmail.png" alt=""></a>
+            <a href="#"><img class="icon" src="images/fb.png" alt=""></a>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="node_modules/default-passive-events/dist/index.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/wesele.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.site-header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: lightgrey;
+    background-color: rgba(0, 0, 0, .3);
+    padding: 70px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.logo {
+    display: block;
+    margin-left: 0;
+    text-shadow: 0 0 0.5em whitesmoke;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.heart {
+    transform: translateZ(0);
+    color: red;
+    position: relative;
+    font-size: 200px;
+}
+
+.heart:hover {
+    animation: pulse .5s linear;
+}
+
+.heart:before {
+    content: "♥";
+    position: absolute;
+    color: darkred;
+    opacity: 0;
+}
+
+@keyframes pulse {
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.wedding-header {
+    font-size: 50px;
+    text-shadow: 0 0 0.2em whitesmoke;
+    color: darkred;
+}
+
+.header {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    margin-right: 700px;
+}
+
+.wed-info-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 100px;
+    font-size: 30px;
+    position: relative;
+    margin-left: 770px;
+}
+
+.wed-info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+
+.wed-infoh {
+    font-size: 42px;
+    color: darkred;
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 0.2em whitesmoke;
+}
+
+.key-info {
+    font-size: 36px;
+    font-weight: bold;
+    color: darkred;
+    text-shadow: 0 0 0.2em whitesmoke;
+}
+
+.gotoslub {
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    text-shadow: 0 0 0.2em whitesmoke;
+}
+
+.wierzynek-img {
+    height: 400px;
+    width: 400px;
+    border-radius: 25%;
+}
+
+.wierzynek-box {
+    padding-left: 600px;
+    padding-top: 50px;
+}
